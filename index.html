@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>Old Store Mendoza</title>
+  </head>
+
+  <!-- Según las consignas del trabajo final nuestro sitio debe contener los siguientes elementos:
+            1. HOME
+            2. PAGINA FORMULARIO DE LOGIN
+            3. PAGINA FORMULARIO DE REGISTRACION
+            4. PERFIL DE USUARIO
+            5. PREGUNTAS FRECUENTES
+            6. FORMULARIO DE CONTACTO
+            7. CARRITO DE COMPRAS
+            8. VALIDACIONES
+            9. SECCION CON TODOS LOS PRODUCTOS
+            10. SECCION CON TODOS LOS SERVICIOS
+            11. SECCION CON UN DETALLE DE CADA PRODUCTO
+            12. SECCION CON UN DETALLE DE CADA SERVICIO
+            13. SECCION CON PARA VER EL CARRITO DE COMPRAS
+            14. BACKEND (validación de formularios, acceso a los datos, panel de administracion etc.)
+        -->
+
+
+  <body>
+    <!-- HEADER - Podemos usar un NAVBAR que contenga:
+            1. LOGO DE NUESTRA WEB (debemos crearlo usando Photoshop o similar) con hipervinculo a #Nosotros (descripcion web)
+            2. Boton HOME, que nos regrese siempre a la #Home
+            1. FORMULARIO DE LOGIN: que nos lleve a #Login
+            2. FORMULARIO DE REGISTR0: que nos lleve a #Registro
+            3. PERFIL DE USUARIO: mail, contraseña, foto, direccion de envío, etc...
+            4. CARRITO DE COMPRAS
+            5. FORMULARIO DE CONTACTO
+            6. FAQ -->
+
+    <div class="container-fluid navbar-dark sticky-top" style="background-color: #B67E49;">
+        <nav class="navbar navbar-expand-md navbar-dark container" style="background-color: #B67E49;">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" width="30" height="30" class="d-inline-block align-center" alt="">
+                Old Store Mendoza
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">Productos </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+
+                <!-- Lista desplegable DENTRO de las lista anterior, que junte lo referente al punto 2, 3, 4: #Login, #Registro y #Perfil-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ingresá!</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="login.html">Accedé a tu cuenta</a>
+                    <a class="dropdown-item" href="registro.html">Registrate</a>
+                    <a class="dropdown-item" href="contacto.html">Formulario de Contacto</a>
+                    <a class="dropdown-item" href="faq.html">Preguntas Frecuentes</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Perfil de Usuario</a>
+                    </div>
+                </li>
+                </ul>
+                <div class="nav-item mt-2 mt-md-0">
+                    <a class="nav-link btn btn-warning text-dark" href="#">Carrito de Compras</a> <!-- #CarritoCompras -->
+                </div>
+            </div>
+        </nav>
+    </div> <!-- NAVBAR -->
+
+    <!-- SLIDER -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img class="d-block w-100" src="img/a.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h4>Catálogo Online</h5>
+                <p>Además del amplio catálogo que te ofrecemos, nuestra tienda tiene una ventaja más y es el hecho de que hace posible la compra y venta de antigüedades online.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="img/a.png" alt="Second slide">
+            <a href="servicios.html"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Contratar un Servicio</h5>
+                <p>En nuestra tienda podés contratar servicios de restauración y todo lo que necesites para darle vida a tus muebles antiguos, desde trabajos de ebanisteria, carpinteria, pintura y mucho más, con profesionales valorados por la comunidad de "Old Store Mendoza".</p>
+            </div>
+            </a>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="img/a.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Aprender sobre Estilos</h5>
+                <p> Te interesa aprender sobre los distintos estilos que podes elegir para tu decoración?. Tenemos una sección online para que puedas conocer las diferentes tendencias y épocas de manera que puedas hacer tus propias creaciones!</p>
+            </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- FIN SLIDER -->
+
+    <!-- SECCIÓN 1: Contiene el nombre de nuestra pagina: -->
+    <section class="container my-5">
+        <!-- NOMBRE DE NUESTRO SITIO: puse uno genérico para ir teniendo en mente la ubicación de los elementos-->
+        <h1 class="text-center my-3 display-4">Old Store Mendoza</h1>
+        <h5 class="text-center my-3">Compra - Venta de Antigüedades y Servicios</h5>
+        <!-- FIN TITULO -->
+        <p class="lead text-center mb-5 text-dar;">En nuestra tienda podrás descubrir un universo único y diferente de posibilidades. Contamos con un amplio catálogo de oportunidades, antigüedades muy especiales te están esperando. Podrás encontrar todo lo que siempre has imaginado. Un sueño hecho realidad para los amantes de los elementos y piezas con personalidad, para los que saben apreciar la esencia de este tipo de objetos.</p>
+        <!-- PRODUCTOS SELECCIONADOS -->
+        <div class="card-deck">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" src="img/producto5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eveniet fuga labore sed nemo veniam totam nihil ratione sequi nisi. Porro illo quasi minima? Laboriosam.</p>
+                        <p class="lead">
+                            <a class="btn btn-warning text-dark btn-lg" href="catalogo.html" role="button">Comprar</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" src="img/producto5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dicta assumenda tempore asperiores impedit nesciunt fugiat voluptatum ex saepe ea iste, harum quos iusto rerum!</p>
+                        <p class="lead">
+                            <a class="btn btn-warning text-dark btn-lg" href="catalogo.html" role="button">Comprar</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" src="img/producto5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident optio laudantium illum! Exercitationem vitae perspiciatis perferendis excepturi! Quia, perferendis in facilis placeat</p>
+                        <p class="lead">
+                            <a class="btn btn-warning text-dark btn-lg" href="catalogo.html" role="button">Comprar</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/producto5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Producto 4</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt laborum asperiores quod ipsa reiciendis error quaerat vitae id facere! Eligendi laborum saepe rem atque.</p>
+                            <p class="lead">
+                                <a class="btn btn-warning text-dark btn-lg" href="electro.html" role="button">Comprar</a>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/producto5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Producto 5</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita beatae alias saepe quia molestias, aspernatur similique iusto fugit? Minima incidunt</p>
+                            <p class="lead">
+                                <a class="btn btn-warning text-dark btn-lg" href="muebles.html" role="button">Comprar</a>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/producto5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Producto 6</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptas architecto id illum! Voluptatem impedit sequi expedita illum, voluptate neque quos! Saepe aliqui</p>
+                            <p class="lead">
+                                <a class="btn btn-warning text-dark btn-lg" href="catalogo.html" role="button">Comprar</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div><!-- FIN PRODUCTOS SELECCIONADOS-->
+    </section><!-- SECTION UNO -->
+
+    <!-- SECCION DE SERVICIOS -->
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Servicios</h1>
+            <p class="lead">Ingresá en este sección para encontrar a los profesionales más capacitados en todas las áreas de la restauracion de antiguedades y muebles.</p>
+            <hr class="my-4">
+            <p>Recordá que es muy importante para la comunidad las valoraciones que otorgamos a nuestros profesionales</p>
+            <p class="lead">
+                <a class="btn btn-warning text-dark btn-lg" href="servicios.html" role="button">Contratar</a>
+            </p>
+        </div>
+
+    </div><!-- FIN SECCION SERVICIOS -->
+
+    <!-- SECCION 3: SERVICIOS -->
+    <section class="container">
+        <h2 class="display-4 text-center">Estilos de Decoración</h2>
+        <p class="lead text-center my-4 text-danger">A lo largo del tiempo y épocas han ido cambiando las diferentes formas de ambientar y decorar los ambientes, influenciados por factores culturales, económicos e intelectuales, algunos de los mas importantes podrás encontrar a continuación</p>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- ACORDIÓN -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header bg-warning rounded-0" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            MID-Century Moderno
+                            </button>
+                        </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            El <b>modernismo</b> fué un movimiento vanguardista internacional que surgió a finales del siglo <b>XIX y principios del XX</b> y se extendió a casi todas las artes incluidas la arquitectura y el diseño. Enmarcado en una época de desarrollo industrial, esta tendencia artística tenía como <b>objetivo innovar en la estética, en lo formal, sin descuidar la real utilidad de los objetos.</b>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-warning rounded-0" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Industrial
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            El estilo industrial, <b>también conocido como estilo loft. Es un estilo decorativo que tiene su origen en la arquitectura típica de la industria, viejas naves del New York de los 50.</b> Convertida posteriormente en vivienda para artistas e inmigrantes que no podían pagar el alquiler de un apartamento en la ciudad. Una arquitectura sin pretensiones y un atractivo visual que tiene que ver con su estructura de ladrillo visto y sus materiales.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-warning rounded-0" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Naútico o Navy
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <b>La decoración marina o naútica es ideal, para los amantes del mar, ya que promete trasladar esa sensación marítima en el hogar y, además, dotarlo de tranquilidad.</b> Pero pon especial atención si tu casa está en zonas de clima frío. Debido a que este estilo decorativo se caracteriza por transmitir al ambierte frescor. Si es tu caso, te recomendamos que aportes a tu vivienda calidez y confort.
+                        </div>
+                        </div>
+                    </div>
+                </div><!-- ACORDIÓN -->
+            </div>
+
+            <div class="col-md-6">
+                <!-- ACORDIÓN -->
+                <div id="accordion2">
+                        <div class="card">
+                            <div class="card-header bg-warning rounded-0" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Escandinavo (Hygge)
+                                </button>
+                            </h5>
+                            </div>
+
+                            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis, harum similique velit expedita accusantium quaerat quas eos id a sapiente et dolorum inventore. Cumque numquam aliquam provident. Porro at totam quas aspernatur adipisci, magni excepturi vitae explicabo facilis omnis ullam quisquam commodi amet? Veritatis.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header bg-warning rounded-0" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Bohemio o Boho Chic
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum modi repudiandae incidunt provident aperiam iure magnam unde illum ducimus mollitia nihil excepturi, accusamus cum assumenda eligendi, libero a repellat culpa rerum et saepe! Magni officia eligendi ipsam velit accusantium similique harum maxime repellat modi, enim ex vel voluptatem iure dolorem.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header bg-warning rounded-0" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Granja o Framhouse Chic
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, placeat. Adipisci odit sapiente illum delectus dolores, possimus facere ullam quae voluptate id in error ducimus beatae eaque quas, officia, architecto quaerat corporis temporibus! At corrupti, quae omnis dolorem quibusdam nulla minima quis vitae exercitationem, delectus, voluptatum praesentium molestias iure tenetur?
+                            </div>
+                            </div>
+                        </div>
+                    </div><!-- ACORDIÓN -->
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 2 -->
+
+    <!-- testimonios -->
+    <h3 class="mt-5 text-center text-uppercase font-weight-light mb-5">Testimonios</h3>
+    <div id="idSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#idSlider" data-slide-to="0" class="active bg-secondary"></li>
+          <li data-target="#idSlider" data-slide-to="1" class="bg-secondary"></li>
+          <li data-target="#idSlider" data-slide-to="2" class="bg-secondary"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-5 text-center">
+            <h5>Lorem ipsum dolor sit amet.1</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, consectetur nostrum. Mollitia vitae quaerat omnis?</p>
+          </div>
+          <div class="carousel-item mb-5 text-center">
+            <h5>Lorem ipsum dolor sit amet.2</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, consectetur nostrum. Mollitia vitae quaerat omnis?</p>
+          </div>
+          <div class="carousel-item mb-5 text-center">
+            <h5>Lorem ipsum dolor sit amet.3</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, consectetur nostrum. Mollitia vitae quaerat omnis?</p>
+          </div>
+        </div>
+    </div><!-- testimonios -->
+
+    <hr>
+    <!-- footer -->
+    <div class="container">
+    <div class="row justify-content-between text-center">
+        <div class="col-md-4 text-md-left">
+            <!--<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem?</p>-->
+            <p><small>&copy; 2019 Old Store Mendoza <span>Designed by <a href="nosotros.html" target="_blank">Grupo 4 DH</a> </span></small></p>
+        </div>
+        <div class="col-md-4 text-md-right">
+            <div class="h3">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="formContacto.js"></script>
+</body>
+</html>

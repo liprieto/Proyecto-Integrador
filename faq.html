@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>Preguntas Frecuentes</title>
+  </head>
+
+  <!-- Según las consignas del trabajo final nuestro sitio debe contener los siguientes elementos:
+            1. HOME
+            2. PAGINA FORMULARIO DE LOGIN
+            3. PAGINA FORMULARIO DE REGISTRACION
+            4. PERFIL DE USUARIO
+            5. PREGUNTAS FRECUENTES
+            6. FORMULARIO DE CONTACTO
+            7. CARRITO DE COMPRAS
+            8. VALIDACIONES
+            9. SECCION CON TODOS LOS PRODUCTOS
+            10. SECCION CON TODOS LOS SERVICIOS
+            11. SECCION CON UN DETALLE DE CADA PRODUCTO 
+            12. SECCION CON UN DETALLE DE CADA SERVICIO
+            13. SECCION CON PARA VER EL CARRITO DE COMPRAS 
+            14. BACKEND (validación de formularios, acceso a los datos, panel de administracion etc.)
+        -->
+
+
+  <body>
+    <!-- HEADER - Podemos usar un NAVBAR que contenga: 
+            1. LOGO DE NUESTRA WEB (debemos crearlo usando Photoshop o similar) con hipervinculo a #Nosotros (descripcion web)
+            2. Boton HOME, que nos regrese siempre a la #Home
+            1. FORMULARIO DE LOGIN: que nos lleve a #Login
+            2. FORMULARIO DE REGISTRACION> que nos lleve a #Registro
+            3. PERFIL DE USUARIO: mail, contraseña, foto, direccion de envío, etc...
+            4. CARRITO DE COMPRAS -->
+    <div class="container-fluid navbar-dark sticky-top" style="background-color: #B67E49;">
+        <nav class="navbar navbar-expand-md navbar-dark container" style="background-color: #B67E49;">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" width="30" height="30" class="d-inline-block align-center" alt="">
+                Old Store Mendoza
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                
+                <!-- Lista desplegable DENTRO de las lista anterior, que junte lo referente al punto 2, 3, 4: #Login, #Registro y #Perfil-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ingresá!</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="login.html">Accedé a tu cuenta</a>
+                    <a class="dropdown-item" href="registro.html">Registrate</a>
+                    <a class="dropdown-item" href="contacto.html">Formulario de Contacto</a>
+                    <a class="dropdown-item" href="faq.html">Preguntas Frecuentes</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Perfil de Usuario</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </div> <!-- NAVBAR -->
+    <p>
+
+    <!-- SECCION: Preguntas frecuentes -->
+    <section class="container">
+        <h3 class="text-center">Preguntas Frecuentes - FAQ</h3>
+        <p class="lead font-italic text-center my-4 text-black">Tenés alguna consulta acerca de como comprar? Te gustaría contratar servicios y no sabés como? en este apartado podrás encontrar respuesta a tus preguntas. En caso que no encuentres la tuya no dudes en contactarnos!</p>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- ACORDIÓN -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header border-warning rounded-0" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <mark>1. Es seguro comprar en OSM?</mark>
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum repudiandae, perspiciatis recusandae expedita hic ex! Sunt molestiae omnis quas vero recusandae animi iste itaque autem, distinctio suscipit velit amet doloribus.
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header border-warning rounded-0" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <mark>1. Es seguro comprar en OSM?</mark>
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis blanditiis ducimus at! Ex, voluptate ea fuga harum qui hic facere pariatur, eos ipsam, sapiente earum aperiam vitae recusandae voluptatibus sequi!
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header border-warning rounded-0" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <mark>1. Es seguro comprar en OSM?</mark>
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ullam laudantium quos inventore architecto sequi, ipsam hic veniam dignissimos odit?
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header border-warning rounded-0" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <mark>1. Es seguro comprar en OSM?</mark>
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae necessitatibus vero obcaecati quisquam ipsa veniam et suscipit corrupti dolorem magnam, aut error voluptates qui voluptatem.
+                            </div>
+                            </div>
+                        </div>
+
+                    <div class="card">
+                            <div class="card-header border-warning rounded-0" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <mark>1. Es seguro comprar en OSM?</mark>
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit adipisci delectus optio. Molestias quisquam ipsa, ad ratione maxime odit.
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header border-warning rounded-0" id="headingSix">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <mark>1. Es seguro comprar en OSM?</mark>
+                                </button>
+                                </h5>
+                            </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, consequatur commodi. Vitae, vero quia neque tenetur minus eos deserunt et!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header border-warning rounded-0" id="headingSeven">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <mark>1. Es seguro comprar en OSM?</mark>
+                                </button>
+                                </h5>
+                            </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vitae beatae placeat veritatis perspiciatis quidem cum minus excepturi delectus, reiciendis, quasi qui incidunt mollitia unde accusamus. Molestias dolore saepe velit?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header border-warning rounded-0" id="headingEight">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <mark>1. Es seguro comprar en OSM?</mark>
+                                </button>
+                                </h5>
+                            </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam nulla temporibus libero cupiditate accusamus doloremque assumenda dolor quo modi.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header border-warning rounded-0" id="headingNine">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                <mark>1. Es seguro comprar en OSM?</mark>
+                                </button>
+                                </h5>
+                            </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, ullam laboriosam nesciunt quam aspernatur excepturi voluptas delectus facere magni nobis?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header border-warning rounded-0" id="headingTen">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                <mark>1. Es seguro comprar en OSM?</mark>
+                                </button>
+                                </h5>
+                            </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod earum labore amet repudiandae! Voluptatum blanditiis magni sit laboriosam facere iste sint iure quam commodi aliquam quae alias, molestiae temporibus in!
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- ACORDIÓN -->
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 2 -->
+
+  
+    <hr>
+    <!-- footer -->
+    <div class="container">
+    <div class="row justify-content-between text-center">
+        <div class="col-md-4 text-md-left">
+            <!--<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem?</p>-->
+            <p><small>&copy; 2019 Old Store Mendoza <span>Designed by <a href="nosotros.html" target="_blank">Grupo 4 DH</a> </span></small></p>
+        </div>
+        <div class="col-md-4 text-md-right">
+            <div class="h3">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
